@@ -2,6 +2,8 @@
 
 A local, feature-rich Gradio interface for the **Kokoro** open-weight Text-to-Speech model. This application provides a user-friendly web UI to generate high-quality speech, featuring parallel processing for long texts, advanced text cleaning, and automatic hardware acceleration.
 
+<img width="1138" height="1283" alt="image" src="https://github.com/user-attachments/assets/3d4b74d2-33d8-4cef-ad4e-bc507d490270" />
+
 ## ✨ Features
 
 * **High-Quality TTS:** Access to all Kokoro voices (US & UK accents).
