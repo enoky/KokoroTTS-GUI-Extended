@@ -375,6 +375,7 @@ with gr.Blocks(title="Kokoro TTS Local") as app:
     
     with gr.Row():
         with gr.Column():
+
             text = gr.Textbox(label='Input Text', lines=5, value="Hello, this is a local test of Kokoro TTS on Windows.")
             
             with gr.Row():
@@ -400,12 +401,6 @@ with gr.Blocks(title="Kokoro TTS Local") as app:
                 )
             
             with gr.Row():
-                random_btn = gr.Button('🎲 Random Quote', variant='secondary')
-                gatsby_btn = gr.Button('🥂 Gatsby', variant='secondary')
-                frankenstein_btn = gr.Button('💀 Frankenstein', variant='secondary')
-
-        with gr.Column():
-            with gr.Row():
                 generate_btn = gr.Button('Generate', variant='primary')
                 stop_generate_btn = gr.Button('Stop', variant='stop')
             out_audio = gr.Audio(label='Output Audio', interactive=False)
@@ -413,6 +408,11 @@ with gr.Blocks(title="Kokoro TTS Local") as app:
                 out_ps = gr.Textbox(interactive=False, show_label=False)
                 tokenize_btn = gr.Button('Tokenize', variant='secondary')
                 gr.Markdown(TOKEN_NOTE)
+
+            with gr.Row():
+                random_btn = gr.Button('🎲 Random Quote', variant='secondary')
+                gatsby_btn = gr.Button('🥂 Gatsby', variant='secondary')
+                frankenstein_btn = gr.Button('💀 Frankenstein', variant='secondary')
 
     # Event Handlers
     random_btn.click(fn=get_random_quote, inputs=[], outputs=[text])
